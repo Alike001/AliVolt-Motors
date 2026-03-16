@@ -1,8 +1,5 @@
-body{
+body {
 margin:0;
 font-family:Arial, sans-serif;
-}
-
-html{
-scroll-behavior:smooth;
+box-sizing: border-box;
 }

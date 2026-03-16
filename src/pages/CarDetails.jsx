@@ -1,4 +1,4 @@
-import{useParams} from 'react-router';
+import{ useParams } from 'react-router';
 import styled from 'styled-components';
 import cars from '../data/cars';
 
@@ -24,9 +24,11 @@ export default CarDetails
 const Container = styled.div`
   padding: 120px;
   text-align: center;
+
  img {
   width: 100%;
   }
+  
   button {
     padding: 15px 30px;
     margin-top: 20px;

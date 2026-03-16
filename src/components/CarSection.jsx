@@ -14,12 +14,12 @@ export function CarSection({car}) {
         </Buttons>
       </Overlay>
     </Container>
+
   );
   
 }
 
 const Container = styled.div`
-  width: 100vw;
   height: 100vh;
   background-size: cover;
   background-image: url(${props => props.image});
@@ -36,22 +36,35 @@ const Overlay = styled.div`
   background:rgba(0,0,0,0.4);
   padding:40px;
   border-radius:10px;
+
+  animation: fadeIn 1.5s ease;
+
+  @keyframes fadeIn {
+      from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to  {
+      opacity: 1;
+      transform: translateY(0);
+      }
+  }
 `
 
 const Buttons = styled.div`
   margin-top:20px;
 
   button {
-  padding:12px 25px;
-  margin:10px;
-  border-radius:20px;
-  border:none;
-  cursor:pointer;
-  font-weight:bold;
-  background:black;
-  color:white;
+    padding:12px 25px;
+    margin:10px;
+    border-radius:20px;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+    background:black;
+    color:white;
   }
-
+    
   button:hover{
   transform:scale(1.05);
   }
