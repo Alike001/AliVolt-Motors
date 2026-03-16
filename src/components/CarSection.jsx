@@ -9,8 +9,7 @@ export function CarSection({car}) {
         <p>{car.description}</p>
         <Buttons>
           <Link to={`/car/${car.id}`}>
-          <button className="dark">Explore</button>
-          <button className="light">Order Now</button>
+          <button>Explore</button>
           </Link>
         </Buttons>
       </Overlay>
@@ -49,16 +48,8 @@ const Buttons = styled.div`
   border:none;
   cursor:pointer;
   font-weight:bold;
-  }
-
-  .dark{
   background:black;
   color:white;
-  }
-
-  .light{
-  background:white;
-  color:black;
   }
 
   button:hover{
