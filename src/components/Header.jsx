@@ -1,5 +1,5 @@
-import { Link } from 'react-router'
-import styled from 'styled-components'
+import { Link } from 'react-router';
+import styled from 'styled-components';
 
 export function Header() {
   return(
@@ -11,23 +11,24 @@ export function Header() {
 }
 
 const Hero = styled.div`
-position: fixed;
-top: 0;
-width: 100%;
-display: flex;
-align-items: center;
-justify-content: space-between;
-background-color: black;
-color: white;
-padding: 10px;
-zindex: 100;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  zindex: 100;
 
-h2 {
-font-family: Roboto;
-}`
+  h2 {
+  font-family: Roboto;
+  }
+`
 
 const StyledLink = styled(Link)`
-text-decoration: none;
-color: white;
-cursor: pointer;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 `

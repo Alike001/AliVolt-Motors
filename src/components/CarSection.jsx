@@ -1,14 +1,14 @@
 import { Link } from 'react-router'
 import styled from 'styled-components'
 
-export function CarSection() {
+export function CarSection({car}) {
   return(
-    <Container>
+    <Container image={car.image}>
       <Overlay>
-        <h1>Falcon</h1>
-        <p>This is an electric car.</p>
+        <h1>{car.name}</h1>
+        <p>{car.description}</p>
         <Buttons>
-          <Link to="/">
+          <Link to={`/car/${car.id}`}>
           <button className="dark">Explore</button>
           <button className="light">Order Now</button>
           </Link>
@@ -23,7 +23,7 @@ const Container = styled.div`
   width: 100vw;
   height: 100vh;
   background-size: cover;
-  background-image: url('/images/Falcon.jpg');
+  background-image: url(${props => props.image});
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
