@@ -1,10 +1,7 @@
-import { Link } from 'react-router';
-import { useDispatch } from "react-redux"
-import { selectCars } from "../redux/carSlice"
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export function CarSection({car}) {
-  const dispatch = useDispatch()
   return(
     <Container image={car.image}>
       <Overlay>
@@ -12,7 +9,7 @@ export function CarSection({car}) {
         <p>{car.description}</p>
         <Buttons>
           <Link to={`/car/${car.id}`}>
-            <button onClick={() => dispatch(selectCars(car))}>
+            <button>
               Explore
             </button>
           </Link>

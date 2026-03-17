@@ -1,4 +1,4 @@
-import{ useParams } from 'react-router';
+import{ useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import cars from '../data/cars';
 
@@ -27,6 +27,11 @@ const Container = styled.div`
 
  img {
   width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px auto;
+  display: block;
   }
   
   button {
@@ -37,5 +42,13 @@ const Container = styled.div`
     border: none;
     border-radius: 20px;
     cursor: pointer;
+  }
+
+   @media (max-width: 768px) {
+    padding: 20px;
+
+    img {
+      max-width: 100%;
+    }
   }
 `
