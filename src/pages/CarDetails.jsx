@@ -46,6 +46,7 @@ const Container = styled.div`
 
    @media (max-width: 768px) {
     padding: 20px;
+    margin-top: 50px;
 
     img {
       max-width: 100%;
